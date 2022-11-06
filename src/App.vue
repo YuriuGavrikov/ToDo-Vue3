@@ -104,7 +104,6 @@ const addTask = (item) => {
 <template>
   <div class="container">
     <Header @onShowAddChange="showAddChange" />
-    {{ sortBy }}
     <SearchSort v-model:search="search" v-model:sortBy="sortBy" />
     <Table :tasks="tasks" :searchSortTasks="searchSortTasks" />
     <AddTask :showAdd="showAdd" @onAddTask="addTask" @onShowAddChange="showAddChange" />
